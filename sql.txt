@@ -1,0 +1,11 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS minesweeper;
+
+-- Switch to the minesweeper database
+USE minesweeper;
+
+-- Create the users table
+CREATE TABLE IF NOT EXISTS users (
+    user_id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
